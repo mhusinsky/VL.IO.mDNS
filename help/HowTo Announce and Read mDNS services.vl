@@ -15,34 +15,34 @@
       </p:NodeReference>
       <Patch Id="GJ90AJEPBrrNL9oxxFkptC">
         <Canvas Id="AqKsLNRAfz6MgJHWqcD95s" CanvasType="Group">
-          <Pad Id="SvOmssXFFeiNAHNJ97mbbF" Comment="" Bounds="341,957,199,669" ShowValueBox="true" isIOBox="true">
+          <Pad Id="SvOmssXFFeiNAHNJ97mbbF" Comment="" Bounds="171,927,199,669" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">25</p:maxvisibleentries>
               <p:showentryindex p:Type="Boolean">true</p:showentryindex>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UjER3NpEbPrN39W19gZ4RU" Comment="" Bounds="998,709,184,203" ShowValueBox="true" isIOBox="true">
+          <Pad Id="UjER3NpEbPrN39W19gZ4RU" Comment="" Bounds="1129,585,184,203" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">12</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UNODfZUUZlvPuT1exnQGEq" Comment="" Bounds="1209,713,416,137" ShowValueBox="true" isIOBox="true">
+          <Pad Id="UNODfZUUZlvPuT1exnQGEq" Comment="" Bounds="1340,585,416,137" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">7</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CcHej1Fh6UjPe9lZIAl76c" Comment="" Bounds="549,956,506,670" ShowValueBox="true" isIOBox="true">
+          <Pad Id="CcHej1Fh6UjPe9lZIAl76c" Comment="" Bounds="379,926,506,670" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">25</p:maxvisibleentries>
               <p:showentryindex p:Type="Boolean">true</p:showentryindex>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UxTjP58S810P4J3zWZQYb4" Comment="Name" Bounds="751,693,122,16" ShowValueBox="true" isIOBox="true" Value="_espace._tcp.local">
+          <Pad Id="UxTjP58S810P4J3zWZQYb4" Comment="Name" Bounds="581,738,122,16" ShowValueBox="true" isIOBox="true" Value="_espace._tcp.local">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="636,717,106,19" Id="ELsxnl7kqJ7Luscuhg7FT5">
+          <Node Bounds="466,762,106,19" Id="ELsxnl7kqJ7Luscuhg7FT5">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ServiceToAddresses" />
@@ -50,14 +50,14 @@
             <Pin Id="VFsHcYmLeqYNHEpPiYa36T" Name="Input" Kind="InputPin" />
             <Pin Id="GtHJKLgvJUkM5folruXEHR" Name="Service Name" Kind="InputPin" />
             <Pin Id="OJUyzDjsW88NDR4qpJfK64" Name="Addresses" Kind="OutputPin" />
+            <Pin Id="A75lRvj1zVBNmAnmQIob6l" Name="Addresses Strings" Kind="OutputPin" />
           </Node>
-          <Pad Id="OZQSL7WUeXlNDHsWw4jChT" Comment="Addresses" Bounds="638,755,236,189" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="OjWzEOEnP66M8f6SvzayAS" Comment="Name" Bounds="753,659,122,16" ShowValueBox="true" isIOBox="true" Value="_smb._tcp.local">
+          <Pad Id="OjWzEOEnP66M8f6SvzayAS" Comment="Name" Bounds="569,705,122,16" ShowValueBox="true" isIOBox="true" Value="_smb._tcp.local">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="636,483,328,19" Id="QaohL4ASq5iMbOEIovmCwA">
+          <Node Bounds="473,494,451,19" Id="QaohL4ASq5iMbOEIovmCwA">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ServiceBrowser" />
@@ -75,16 +75,16 @@
             <Pin Id="D2IGF5hlFhxNdF18dashCo" Name="Host Address Details" Kind="OutputPin" IsHidden="true" />
             <Pin Id="A3u8snJonNPP8ggtEh45Cz" Name="Hosts" Kind="OutputPin" />
           </Node>
-          <Node Bounds="480,616,73,19" Id="Ae48sNt0vEFNMpgfSYNJl7">
+          <Node Bounds="325,544,107,19" Id="Ae48sNt0vEFNMpgfSYNJl7">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="SplitServices" />
+              <Choice Kind="OperationCallFlag" Name="ServicesToInstances" />
             </p:NodeReference>
             <Pin Id="IYRaoBNOMsoOQT7BccV5ca" Name="Input" Kind="InputPin" />
             <Pin Id="D7WRE8LY5m6LfI7DUFtJ4p" Name="Services" Kind="OutputPin" />
             <Pin Id="BUXgqvFYHlBLnWPFwiYqhs" Name="Service Instances" Kind="OutputPin" />
           </Node>
-          <Node Bounds="740,570,52,19" Id="ANaT92qrExUNPbZZujabKL">
+          <Node Bounds="567,630,52,19" Id="ANaT92qrExUNPbZZujabKL">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
@@ -95,21 +95,21 @@
             <Pin Id="BDHX5VSzDfVME8ENUt3YTg" Name="Index" Kind="InputPin" />
             <Pin Id="NbiqDoM6byTPlxLfEbWtO7" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="MoT7K8ISgV8PrYqmRFRr3q" Comment="Index" Bounds="788,554,35,15" ShowValueBox="true" isIOBox="true" Value="7">
+          <Pad Id="MoT7K8ISgV8PrYqmRFRr3q" Comment="Index" Bounds="615,614,35,15" ShowValueBox="true" isIOBox="true" Value="8">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="996,635,205,19" Id="KitQzAfMqyyPKlHRw3itmp">
+          <Node Bounds="1127,541,216,19" Id="KitQzAfMqyyPKlHRw3itmp">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="SplitHosts" />
+              <Choice Kind="OperationCallFlag" Name="HostsToAddresses" />
             </p:NodeReference>
             <Pin Id="QTRl0sVhzVaOAe10qQafax" Name="Input" Kind="InputPin" />
-            <Pin Id="PaP9lej7m7NLKS10ECHnbG" Name="Hosts" Kind="OutputPin" />
-            <Pin Id="AlStmxmHgwnOkY8fzvK6TL" Name="IP Addresses" Kind="OutputPin" />
+            <Pin Id="UWU3eT6CXsOPN1vHmgiQa8" Name="HostsName" Kind="OutputPin" />
+            <Pin Id="FMg7jRDmCM1NV58cF6aHcn" Name="IPAddress" Kind="OutputPin" />
           </Node>
-          <Pad Id="Ji8vrTMfkImMYH0J9xASEf" Comment="" Bounds="762,611,108,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ji8vrTMfkImMYH0J9xASEf" Comment="" Bounds="589,671,108,15" ShowValueBox="true" isIOBox="true" />
           <Overlay Id="PEHsNh82jW8NAdsQHctNk5" Name="Announce our application via mDNS" Bounds="56,47,628,405" />
           <Node Bounds="79,367,129,19" Id="QmOczfwNQvrNzFY62sq5RV">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.net-mdns.vl">
@@ -204,6 +204,18 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="VZci4P8ylFnNEPeszINgOs" Comment="Addresses Strings" Bounds="904,926,339,272" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="717,540,218,19" Id="KOCrWapttsDOkZCgcLogIC">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="InstancesToHosts" />
+            </p:NodeReference>
+            <Pin Id="N4dieGCB2XIMpZ0ihmWesW" Name="Input" Kind="InputPin" />
+            <Pin Id="PwOOjvvqTWhPRvVKhTXALU" Name="Hosts" Kind="OutputPin" />
+            <Pin Id="Aw5ppdYHSfONSkzR6hKdpx" Name="HostName" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CYMqt0K0bEgMOj5NeQ7jDq" Comment="Hosts" Bounds="719,587,159,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="I4pk7oQiK3XPmtIoj325Yw" Comment="HostName" Bounds="946,587,94,103" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="Mba4PUQ9dCDOkoOhp4w3XC" Name="Create" />
         <Patch Id="NhXYet3XwYiPTLN5m7oeEP" Name="Update" />
@@ -211,16 +223,12 @@
           <Fragment Id="GGx37EjkZpsMBBnY82g7bE" Patch="Mba4PUQ9dCDOkoOhp4w3XC" Enabled="true" />
           <Fragment Id="UqKhNxa0eybPcM1GqFxZfX" Patch="NhXYet3XwYiPTLN5m7oeEP" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="QaPNnlDOEcKN8t8KbhL47m" Ids="OJUyzDjsW88NDR4qpJfK64,OZQSL7WUeXlNDHsWw4jChT" />
         <Link Id="NhXr8nM70MJOgESgZZuP6d" Ids="AVl7EZ2eC7tMiKzLhOWZyX,VFsHcYmLeqYNHEpPiYa36T" />
         <Link Id="Uc3u0hgW76jPEwEt4q5Imf" Ids="HbQiEsK0qdhLJ0Akf38SM3,IYRaoBNOMsoOQT7BccV5ca" />
         <Link Id="KsB5vCpp7Q0Pn2bzKafWf3" Ids="D7WRE8LY5m6LfI7DUFtJ4p,SvOmssXFFeiNAHNJ97mbbF" />
         <Link Id="KGcIWlIZQisPy3ycxaW1p8" Ids="BUXgqvFYHlBLnWPFwiYqhs,CcHej1Fh6UjPe9lZIAl76c" />
         <Link Id="M97YaFLaAGYN5WJ7HiMxzY" Ids="D7WRE8LY5m6LfI7DUFtJ4p,DzyyGIkp7kwM5UwbZIupAt" />
-        <Link Id="RRBb6KM0KiKNlptmhPhYdS" Ids="NbiqDoM6byTPlxLfEbWtO7,GtHJKLgvJUkM5folruXEHR" />
         <Link Id="SHM4aIpizi4MQjGfFlAPq3" Ids="MoT7K8ISgV8PrYqmRFRr3q,BDHX5VSzDfVME8ENUt3YTg" />
-        <Link Id="L3eyJItGKRjQaXx930G4AG" Ids="PaP9lej7m7NLKS10ECHnbG,UjER3NpEbPrN39W19gZ4RU" />
-        <Link Id="FKj6m6ookJEOUAZGp7GJSV" Ids="AlStmxmHgwnOkY8fzvK6TL,UNODfZUUZlvPuT1exnQGEq" />
         <Link Id="BgxiYJCEac8Lmxqh1x5W4A" Ids="A3u8snJonNPP8ggtEh45Cz,QTRl0sVhzVaOAe10qQafax" />
         <Link Id="KuxKjAi9LhlM7itYHjT6xu" Ids="NbiqDoM6byTPlxLfEbWtO7,Ji8vrTMfkImMYH0J9xASEf" />
         <Link Id="AS8HEOxC0sUPOzBlBtezzT" Ids="RJwuln05clOOmfJNQmYjva,R2r8MN1g90PNDQPkRm0B20" />
@@ -230,6 +238,13 @@
         <Link Id="DPwNX2omaUwQUha41WQ8fX" Ids="GjywYnM4jjeLBppwfR2ylx,DlHgZImTMAWO7a5Bp0qupi" />
         <Link Id="UB5RKoM0PQELSK5ois5iMP" Ids="TD1W1FQMzyjNg57SuXMToP,F9wA9IiIuSPM9t3kRvsqRt" />
         <Link Id="UAaVCpOrnd9POna2NC1dPj" Ids="T7vOENWfJy7MI8uRxyUtaA,OcRrEmn7MHVPOWT29Bzm1q" />
+        <Link Id="DP4MQapu73vOKmMlHbBktJ" Ids="A75lRvj1zVBNmAnmQIob6l,VZci4P8ylFnNEPeszINgOs" />
+        <Link Id="A42zWFul37CPkwLDRhuDTI" Ids="HpVyEiyZuzcLgvW4tNxMoA,N4dieGCB2XIMpZ0ihmWesW" />
+        <Link Id="IjRJYzEpUYXOoA24QB0Sxn" Ids="PwOOjvvqTWhPRvVKhTXALU,CYMqt0K0bEgMOj5NeQ7jDq" />
+        <Link Id="STHhqzu36fTNyKbgJWHnHR" Ids="Aw5ppdYHSfONSkzR6hKdpx,I4pk7oQiK3XPmtIoj325Yw" />
+        <Link Id="DO2DAGMbGe8LzTO0fpPIHD" Ids="UWU3eT6CXsOPN1vHmgiQa8,UjER3NpEbPrN39W19gZ4RU" />
+        <Link Id="OE8IwPMoxDjOlOeU3NEjEv" Ids="FMg7jRDmCM1NV58cF6aHcn,UNODfZUUZlvPuT1exnQGEq" />
+        <Link Id="Coft8pQ6EG4MZ1iyyZBQJl" Ids="OjWzEOEnP66M8f6SvzayAS,GtHJKLgvJUkM5folruXEHR" />
       </Patch>
     </Node>
   </Patch>
