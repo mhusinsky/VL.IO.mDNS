@@ -2,68 +2,63 @@
 <Document xmlns:p="property" xmlns:r="reflection" Id="E95JwnySOcXN7Vjja7Eh2E" LanguageVersion="2024.6.6" Version="0.128">
   <NugetDependency Id="U5sKUqbpdCwMg4ADqBp8gT" Location="VL.CoreLib" Version="2024.6.6" />
   <Patch Id="BithELjL5m5OiKz9GnfE0f">
-    <Canvas Id="FxQsbTgSgYlNhOdv7Tjvlr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <Canvas Id="FxQsbTgSgYlNhOdv7Tjvlr" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
 
     ************************ Application ************************
 
 -->
-    <Node Name="Application" Bounds="100,100" Id="RzTD4AweKKmNIUkuc9VKpY">
+    <Node Name="Application" Bounds="100,100" Id="RzTD4AweKKmNIUkuc9VKpY" Summary="mDNS">
       <p:NodeReference>
         <Choice Kind="ContainerDefinition" Name="Process" />
         <CategoryReference Kind="Category" Name="Primitive" />
       </p:NodeReference>
       <Patch Id="GJ90AJEPBrrNL9oxxFkptC">
         <Canvas Id="AqKsLNRAfz6MgJHWqcD95s" CanvasType="Group">
-          <Pad Id="SvOmssXFFeiNAHNJ97mbbF" Comment="" Bounds="-139,713,193,467" ShowValueBox="true" isIOBox="true">
+          <Pad Id="SvOmssXFFeiNAHNJ97mbbF" Comment="" Bounds="959,697,215,611" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">25</p:maxvisibleentries>
               <p:showentryindex p:Type="Boolean">true</p:showentryindex>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UjER3NpEbPrN39W19gZ4RU" Comment="" Bounds="1272,502,184,203" ShowValueBox="true" isIOBox="true">
+          <Pad Id="UjER3NpEbPrN39W19gZ4RU" Comment="" Bounds="1811,489,184,203" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">12</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UNODfZUUZlvPuT1exnQGEq" Comment="" Bounds="1487,513,416,137" ShowValueBox="true" isIOBox="true">
+          <Pad Id="UNODfZUUZlvPuT1exnQGEq" Comment="" Bounds="2024,490,403,203" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">7</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CcHej1Fh6UjPe9lZIAl76c" Comment="" Bounds="69,712,500,468" ShowValueBox="true" isIOBox="true">
+          <Pad Id="CcHej1Fh6UjPe9lZIAl76c" Comment="" Bounds="1182,697,500,608" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">25</p:maxvisibleentries>
               <p:showentryindex p:Type="Boolean">true</p:showentryindex>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UxTjP58S810P4J3zWZQYb4" Comment="Name" Bounds="862,637,122,16" ShowValueBox="true" isIOBox="true" Value="_espace._tcp.local">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="747,661,106,19" Id="ELsxnl7kqJ7Luscuhg7FT5">
+          <Node Bounds="124,703,616,19" Id="ELsxnl7kqJ7Luscuhg7FT5">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="ServiceToAddresses" />
+              <Choice Kind="OperationCallFlag" Name="ServiceToConnectionInfo" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="VFsHcYmLeqYNHEpPiYa36T" Name="Input" Kind="InputPin" />
             <Pin Id="GtHJKLgvJUkM5folruXEHR" Name="Service Name" Kind="InputPin" />
+            <Pin Id="GJq7J1UojwAO9CKuhnqlv2" Name="Instances Name String" Kind="OutputPin" />
             <Pin Id="OJUyzDjsW88NDR4qpJfK64" Name="Addresses" Kind="OutputPin" />
             <Pin Id="A75lRvj1zVBNmAnmQIob6l" Name="Addresses Strings" Kind="OutputPin" />
+            <Pin Id="ETEAYbXJTmDO025n7KPsiR" Name="Port" Kind="OutputPin" />
+            <Pin Id="NB44Qo8A28iNRXNqeCdUEx" Name="IPEndPoints" Kind="OutputPin" />
           </Node>
-          <Pad Id="OjWzEOEnP66M8f6SvzayAS" Comment="Name" Bounds="850,604,122,16" ShowValueBox="true" isIOBox="true" Value="_smb._tcp.local">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="827,212,451,19" Id="QaohL4ASq5iMbOEIovmCwA">
+          <Node Bounds="789,330,451,19" Id="QaohL4ASq5iMbOEIovmCwA">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ServiceBrowser" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="UnxAflRc8xvOsqd1rY8uzM" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="UgjKUnW6xw4NOhJ6yPumM1" Name="Force" Kind="InputPin" />
+            <Pin Id="UgjKUnW6xw4NOhJ6yPumM1" Name="Query" Kind="InputPin" />
             <Pin Id="BHQvdTzeRiiLqsEiWyHi1j" Name="Catalog" Kind="OutputPin" IsHidden="true" />
             <Pin Id="PuUeD6L5Va9MlCmbpZH7dM" Name="Service Discovered" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Do8o7lBBOUNNEKjd8s2PWQ" Name="Instance Discovered" Kind="OutputPin" IsHidden="true" />
@@ -74,18 +69,21 @@
             <Pin Id="HpVyEiyZuzcLgvW4tNxMoA" Name="Instances" Kind="OutputPin" />
             <Pin Id="D2IGF5hlFhxNdF18dashCo" Name="Host Address Details" Kind="OutputPin" IsHidden="true" />
             <Pin Id="A3u8snJonNPP8ggtEh45Cz" Name="Hosts" Kind="OutputPin" />
+            <Pin Id="OkfOkmUyWEDMKMmwrjmnGq" Name="Grace Period" Kind="InputPin" DefaultValue="-60" />
+            <Pin Id="NMskoUwBIfpP4MrxujWNeV" Name="Purge Dead" Kind="InputPin" />
           </Node>
-          <Node Bounds="842,331,107,19" Id="Ae48sNt0vEFNMpgfSYNJl7">
+          <Node Bounds="959,457,107,19" Id="Ae48sNt0vEFNMpgfSYNJl7">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ServicesInstances" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="IYRaoBNOMsoOQT7BccV5ca" Name="Input" Kind="InputPin" />
             <Pin Id="D7WRE8LY5m6LfI7DUFtJ4p" Name="Services" Kind="OutputPin" />
             <Pin Id="BUXgqvFYHlBLnWPFwiYqhs" Name="Service Instances" Kind="OutputPin" />
             <Pin Id="EmTyf3yk237QRMg5z0Mfa2" Name="TTL" Kind="OutputPin" />
           </Node>
-          <Node Bounds="868,528,52,19" Id="ANaT92qrExUNPbZZujabKL">
+          <Node Bounds="772,599,52,19" Id="ANaT92qrExUNPbZZujabKL">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
@@ -96,27 +94,34 @@
             <Pin Id="BDHX5VSzDfVME8ENUt3YTg" Name="Index" Kind="InputPin" />
             <Pin Id="NbiqDoM6byTPlxLfEbWtO7" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="MoT7K8ISgV8PrYqmRFRr3q" Comment="Index" Bounds="916,512,35,15" ShowValueBox="true" isIOBox="true" Value="8">
+          <Pad Id="MoT7K8ISgV8PrYqmRFRr3q" Comment="Index" Bounds="827,576,35,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1270,458,216,19" Id="KitQzAfMqyyPKlHRw3itmp">
+          <Node Bounds="1809,445,433,19" Id="KitQzAfMqyyPKlHRw3itmp">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="HostAddresses" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="QTRl0sVhzVaOAe10qQafax" Name="Input" Kind="InputPin" />
             <Pin Id="UWU3eT6CXsOPN1vHmgiQa8" Name="HostsName" Kind="OutputPin" />
             <Pin Id="FMg7jRDmCM1NV58cF6aHcn" Name="IPAddress" Kind="OutputPin" />
+            <Pin Id="K4uRy51Z9UUNq6WxZJ6GO0" Name="TTL" Kind="OutputPin" />
           </Node>
-          <Pad Id="Ji8vrTMfkImMYH0J9xASEf" Comment="" Bounds="870,570,108,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ji8vrTMfkImMYH0J9xASEf" Comment="" Bounds="737,671,93,15" ShowValueBox="true" isIOBox="true" Value="_http._tcp.local">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
           <Overlay Id="PEHsNh82jW8NAdsQHctNk5" Name="Announce our application via mDNS" Bounds="56,47,628,405" />
           <Node Bounds="79,367,129,19" Id="QmOczfwNQvrNzFY62sq5RV">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.net-mdns.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="mDNSInstance" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="TJfOYRl86x5OC43jUg9Zvn" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="DSJuGFisfJCQO0vUWogIvd" Name="Instance Name" Kind="InputPin" />
             <Pin Id="GKb9jANC6eWPE7ZlBZAY9s" Name="Service Name" Kind="InputPin" DefaultValue="_espace._tcp" />
@@ -134,7 +139,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Veuj2KzddcLLW9G37HbqSm" Comment="Instance Name" Bounds="80,126,93,15" ShowValueBox="true" isIOBox="true" Value="azk01">
+          <Pad Id="Veuj2KzddcLLW9G37HbqSm" Comment="Instance Name" Bounds="80,126,93,15" ShowValueBox="true" isIOBox="true" Value="vvvvInstance">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -200,27 +205,35 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VZci4P8ylFnNEPeszINgOs" Comment="Addresses Strings" Bounds="889,719,339,272" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="1121,273,415,19" Id="KOCrWapttsDOkZCgcLogIC">
+          <Pad Id="VZci4P8ylFnNEPeszINgOs" Comment="Addresses Strings" Bounds="286,816,326,241" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="1092,460,555,19" Id="KOCrWapttsDOkZCgcLogIC">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="InstanceHosts" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="N4dieGCB2XIMpZ0ihmWesW" Name="Input" Kind="InputPin" />
             <Pin Id="PwOOjvvqTWhPRvVKhTXALU" Name="Hosts" Kind="OutputPin" />
             <Pin Id="Aw5ppdYHSfONSkzR6hKdpx" Name="HostName" Kind="OutputPin" />
+            <Pin Id="BYPQPQzmDvSMfoKyETfr32" Name="Port" Kind="OutputPin" />
             <Pin Id="Qne0l1OUooVOIryU0pyL4f" Name="TTL" Kind="OutputPin" />
           </Node>
-          <Pad Id="CYMqt0K0bEgMOj5NeQ7jDq" Comment="Hosts" Bounds="1123,319,159,95" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="I4pk7oQiK3XPmtIoj325Yw" Comment="HostName" Bounds="1350,319,94,106" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="RJULsgDN7AZOdFeoycHSi4" Comment="" Bounds="596,713,268,467" ShowValueBox="true" isIOBox="true">
+          <Pad Id="CYMqt0K0bEgMOj5NeQ7jDq" Comment="Hosts" Bounds="1094,507,162,141" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
-              <p:maxvisibleentries p:Type="Int32">25</p:maxvisibleentries>
-              <p:showentryindex p:Type="Boolean">true</p:showentryindex>
+              <p:maxvisibleentries p:Type="Int32">8</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="I2PxpujPxskLyRMq4jhRhb" Comment="TTL" Bounds="1541,319,82,106" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="CNhSYZ2jyqqNj5dcIcMu9H" Comment="Force" Bounds="829,163,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+          <Pad Id="I4pk7oQiK3XPmtIoj325Yw" Comment="HostName" Bounds="1310,502,151,152" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">8</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="I2PxpujPxskLyRMq4jhRhb" Comment="TTL" Bounds="1644,504,82,152" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">8</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CNhSYZ2jyqqNj5dcIcMu9H" Comment="Query" Bounds="791,281,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -228,7 +241,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="DIW2Ur6cp2yM1aLZNQtll2" Bounds="135,496,145,19" ShowValueBox="true" isIOBox="true" Value="TODO: can TTL be set?">
+          <Pad Id="DIW2Ur6cp2yM1aLZNQtll2" Bounds="292,385,145,19" ShowValueBox="true" isIOBox="true" Value="TODO: can TTL be set?">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -236,6 +249,72 @@
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="JR9UbW839RwOG1uWAUZq8C" Name="Browse for available services on the network" Bounds="728,46,860,354" />
+          <Pad Id="KJpx33TilqMOv3ymEUiwix" Bounds="729,91,830,150" ShowValueBox="true" isIOBox="true" Value="mDNS differentiates between services, service instances, and hosts.&#xD;&#xA;&#xD;&#xA;- Services: Examples include _http._tcp.local or _smb._tcp.local&#xD;&#xA;- Service Instances: A particular software instance that runs a service, identified by prefixing the service name, e.g., myInstance._http._tcp.local. Instances are also assigned a port.&#xD;&#xA;- Hosts: The host name of the machine that runs those service instances. This can be mapped to a host address.&#xD;&#xA;&#xD;&#xA;Entries have a TTL (time to live), allowing them to be removed from the list when their information might be outdated.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NGdYA0Pij3RNR9Tot7mGRJ" Comment="Port" Bounds="1537,503,58,152" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">8</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JCvzpDCJWC4NmVYflqv4uC" Comment="Port" Bounds="681,838,54,71" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HTha6YJJ1sGNwjZbzIu2DT" Bounds="789,256,260,19" ShowValueBox="true" isIOBox="true" Value="Hit to (re)query all services on the network">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="MA0jAeJBV0PO6c49WfCrNi" Name="Filter for all instances of a service and return their connection data" Bounds="78,533,847,577" />
+          <Overlay Id="THThsZn27BALiIlYWMIS9v" Name="List info on services, instances and hosts" Bounds="941,410,1596,957" />
+          <Pad Id="RHwnQWQlBLDOlFpzkyhAaJ" Bounds="151,606,438,41" ShowValueBox="true" isIOBox="true" Value="this is probably the main usecase: for a given service, give back all hosts + connection info on where the service instances are available">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UHjxVfbHjSDMZY3fY9LB6A" Comment="" Bounds="774,635,84,17" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Qvoyqenta6IQHmZy3QfTgP" Comment="" Bounds="126,817,144,246" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Kjufeb5BIc4O3YzXlUYLLm" Comment="TTL" Bounds="1700,707,276,593" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">25</p:maxvisibleentries>
+              <p:showentryindex p:Type="Boolean">true</p:showentryindex>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DIqNK4r28uzPvE47XRAnXd" Comment="Purge Dead" Bounds="1237,285,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BtigcEiDLO1NJyQjjpzdYA" Bounds="1349,252,208,135" ShowValueBox="true" isIOBox="true" Value="Items that are out of date (including a grace period) or don't have a TTL will be removed. When querying, there is a grace period of a few seconds to wait for replies from the network">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GpAEWYevCmcOEuL7UVNYZZ" Comment="Grace Period" Bounds="1014,302,35,15" ShowValueBox="true" isIOBox="true" Value="-120">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
           </Pad>
         </Canvas>
         <Patch Id="Mba4PUQ9dCDOkoOhp4w3XC" Name="Create" />
@@ -251,7 +330,6 @@
         <Link Id="M97YaFLaAGYN5WJ7HiMxzY" Ids="D7WRE8LY5m6LfI7DUFtJ4p,DzyyGIkp7kwM5UwbZIupAt" />
         <Link Id="SHM4aIpizi4MQjGfFlAPq3" Ids="MoT7K8ISgV8PrYqmRFRr3q,BDHX5VSzDfVME8ENUt3YTg" />
         <Link Id="BgxiYJCEac8Lmxqh1x5W4A" Ids="A3u8snJonNPP8ggtEh45Cz,QTRl0sVhzVaOAe10qQafax" />
-        <Link Id="KuxKjAi9LhlM7itYHjT6xu" Ids="NbiqDoM6byTPlxLfEbWtO7,Ji8vrTMfkImMYH0J9xASEf" />
         <Link Id="AS8HEOxC0sUPOzBlBtezzT" Ids="RJwuln05clOOmfJNQmYjva,R2r8MN1g90PNDQPkRm0B20" />
         <Link Id="PvxO77f7uVEMUTxWwjA373" Ids="Veuj2KzddcLLW9G37HbqSm,DSJuGFisfJCQO0vUWogIvd" />
         <Link Id="QP8h0tmAFclLbVyN7QCW0L" Ids="Uj6TGkJQkVOMCWavTvHpis,IkTMQYSlgX2NCFHAmMX9Jc" />
@@ -264,11 +342,16 @@
         <Link Id="STHhqzu36fTNyKbgJWHnHR" Ids="Aw5ppdYHSfONSkzR6hKdpx,I4pk7oQiK3XPmtIoj325Yw" />
         <Link Id="DO2DAGMbGe8LzTO0fpPIHD" Ids="UWU3eT6CXsOPN1vHmgiQa8,UjER3NpEbPrN39W19gZ4RU" />
         <Link Id="OE8IwPMoxDjOlOeU3NEjEv" Ids="FMg7jRDmCM1NV58cF6aHcn,UNODfZUUZlvPuT1exnQGEq" />
-        <Link Id="Coft8pQ6EG4MZ1iyyZBQJl" Ids="OjWzEOEnP66M8f6SvzayAS,GtHJKLgvJUkM5folruXEHR" />
-        <Link Id="ACkpDhKuhvRO8kV55AEKRf" Ids="EmTyf3yk237QRMg5z0Mfa2,RJULsgDN7AZOdFeoycHSi4" />
         <Link Id="E62Zmeby1hbLcr77gjkDAa" Ids="Qne0l1OUooVOIryU0pyL4f,I2PxpujPxskLyRMq4jhRhb" />
         <Link Id="AkD9ekrPNqyOGVHpEjyFpC" Ids="CNhSYZ2jyqqNj5dcIcMu9H,UgjKUnW6xw4NOhJ6yPumM1" />
-        <Link Id="SBCk6X6XjdnONZD19xcWMq" Ids="NbiqDoM6byTPlxLfEbWtO7,OjWzEOEnP66M8f6SvzayAS" />
+        <Link Id="MXz9JbH8XUrLRl0OPBXBm4" Ids="BYPQPQzmDvSMfoKyETfr32,NGdYA0Pij3RNR9Tot7mGRJ" />
+        <Link Id="SmAbJDSL0y4Mw9E0HWOmZW" Ids="ETEAYbXJTmDO025n7KPsiR,JCvzpDCJWC4NmVYflqv4uC" />
+        <Link Id="DBkgPZ4Igo4OAAPDc05lSN" Ids="NbiqDoM6byTPlxLfEbWtO7,UHjxVfbHjSDMZY3fY9LB6A" />
+        <Link Id="TpidBFMcx34Mg9JP5Eyzxx" Ids="GJq7J1UojwAO9CKuhnqlv2,Qvoyqenta6IQHmZy3QfTgP" />
+        <Link Id="K9QuU7CghMXPCEuObrg6K4" Ids="Ji8vrTMfkImMYH0J9xASEf,GtHJKLgvJUkM5folruXEHR" />
+        <Link Id="SmZFX5a29NfPci4y7B317r" Ids="EmTyf3yk237QRMg5z0Mfa2,Kjufeb5BIc4O3YzXlUYLLm" />
+        <Link Id="MePWaFnxMmYL49XT2UrgBk" Ids="DIqNK4r28uzPvE47XRAnXd,NMskoUwBIfpP4MrxujWNeV" />
+        <Link Id="PClGWJj5EWiNxFRAIuNipJ" Ids="GpAEWYevCmcOEuL7UVNYZZ,OkfOkmUyWEDMKMmwrjmnGq" />
       </Patch>
     </Node>
   </Patch>
