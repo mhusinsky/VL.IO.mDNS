@@ -4,7 +4,7 @@ name: push_release_nuget
 on:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
       - Readme.md
 
