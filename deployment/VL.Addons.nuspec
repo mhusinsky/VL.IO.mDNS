@@ -20,6 +20,7 @@
   <files>
     <file src="..\*.vl"/>
     <file src="..\help\**\*.vl" target="help"/>
+    <file src="..\resources\icon.png" target="resources\">
     <file src="..\Readme.md" />
     <file src="..\LICENSE" />
   </files>

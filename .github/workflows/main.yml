@@ -26,6 +26,6 @@ jobs:
       with:
         csproj: src\VL.Addons.sln
         nuspec: deployment\VL.Addons.nuspec
-        icon-src: https://raw.githubusercontent.com/mhusinsky/VL.IO.mDNS/master/resources/icon.png
-        icon-dst: ./deployment/icon.png
+#        icon-src: https://raw.githubusercontent.com/mhusinsky/VL.IO.mDNS/master/resources/icon.png
+#        icon-dst: ./deployment/icon.png
         nuget-key: ${{ secrets.NUGET_KEY }}
