@@ -16,8 +16,8 @@
       <Patch Id="I1BO9FWuaiMNvUVZp844nD">
         <Canvas Id="EYV7UOHZMsOLSIMQ4nAN8V" CanvasType="Group">
           <Pad Id="C2qUSTFuIp6O2J0rjK5Jzw" Comment="" Bounds="70,568,465,97" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Eu4rUbx7hOIQJoMO5u0hTN" Comment="" Bounds="245,320,552,96" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="72,253,75,19" Id="Hqc2mSAvcdNNsI3fMldM7y">
+          <Pad Id="Eu4rUbx7hOIQJoMO5u0hTN" Comment="" Bounds="280,320,552,96" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="68,253,75,19" Id="Hqc2mSAvcdNNsI3fMldM7y">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DebugQueue" />
@@ -29,7 +29,7 @@
             <Pin Id="RDBSr31iDdZMv3TpTDl69m" Name="Frame Count" Kind="InputPin" />
             <Pin Id="LxuZFS27unUMu0ulS99sZ4" Name="Clear" Kind="InputPin" />
           </Node>
-          <Node Bounds="243,252,75,19" Id="UfgdkKMTgN6MarCnISv9H3">
+          <Node Bounds="278,252,75,19" Id="UfgdkKMTgN6MarCnISv9H3">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DebugQueue" />
@@ -41,8 +41,8 @@
             <Pin Id="BG5c3Km7bskMUBSWhXx4RF" Name="Frame Count" Kind="InputPin" />
             <Pin Id="Pr585gPSAPEOUZhkbtp3Kw" Name="Clear" Kind="InputPin" />
           </Node>
-          <Pad Id="MEvoKIiFH4cNeonpVFcNuL" Comment="" Bounds="157,444,559,96" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="155,252,75,19" Id="KZZRUKDdjdzNsuw8CgoJcZ">
+          <Pad Id="MEvoKIiFH4cNeonpVFcNuL" Comment="" Bounds="177,444,559,96" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="175,252,75,19" Id="KZZRUKDdjdzNsuw8CgoJcZ">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DebugQueue" />
@@ -54,13 +54,12 @@
             <Pin Id="ELIrFvFW1cwP92jfD6zdVd" Name="Frame Count" Kind="InputPin" />
             <Pin Id="UL8Aq5kkemgOVY0uSSMqJy" Name="Clear" Kind="InputPin" />
           </Node>
-          <Node Bounds="72,120,194,19" Id="Iyqveu0Nx7iN2NO2Cd6cHe">
+          <Node Bounds="68,120,219,19" Id="Iyqveu0Nx7iN2NO2Cd6cHe">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.MDNS.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ServiceBrowser" />
             </p:NodeReference>
             <Pin Id="J9xKVKN8ABVLxP0R3vjwzv" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="KJEcg6MnN5ANAbU613f29I" Name="Force" Kind="InputPin" />
             <Pin Id="AfH2tdTEYmFNShNW4UwIgG" Name="Catalog" Kind="OutputPin" IsHidden="true" />
             <Pin Id="SFq9FfCO5TyLq3hRdJDQra" Name="Service Discovered" Kind="OutputPin" IsHidden="true" />
             <Pin Id="EI0tCDnLPaJMOXa45HHrVA" Name="Instance Discovered" Kind="OutputPin" IsHidden="true" />
@@ -71,8 +70,11 @@
             <Pin Id="EftHrtxEXeRMqYpDjY5lL8" Name="Instances" Kind="OutputPin" />
             <Pin Id="MPzuYsMKikXMMO8Z576DUW" Name="Host Address Details" Kind="OutputPin" />
             <Pin Id="B3y2DHykFu0QTwcPEOec1n" Name="Hosts" Kind="OutputPin" />
+            <Pin Id="V62yb51iXIZNrcTDBAkaNa" Name="Query" Kind="InputPin" />
+            <Pin Id="OeaZMg6TT3hQHKrVTUrtV5" Name="Grace Period" Kind="InputPin" />
+            <Pin Id="DVGaRe8Mo9GMVvxWw8hPKH" Name="Purge Dead" Kind="InputPin" />
           </Node>
-          <Pad Id="J6RvybZJGRvMBBawclfDDE" Comment="Clear" Bounds="340,201,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+          <Pad Id="J6RvybZJGRvMBBawclfDDE" Comment="Clear" Bounds="375,201,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -80,7 +82,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FhFBu3q0GZEMZx3WqUD91R" Bounds="255,165,85,19" ShowValueBox="true" isIOBox="true" Value="hidden pins!">
+          <Pad Id="FhFBu3q0GZEMZx3WqUD91R" Bounds="275,165,85,19" ShowValueBox="true" isIOBox="true" Value="hidden pins!">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -88,6 +90,11 @@
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MHHVKHe4yqVLonP0XV6dHG" Comment="Frame Count" Bounds="103,200,35,15" ShowValueBox="true" isIOBox="true" Value="1000">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
           </Pad>
         </Canvas>
         <Patch Id="QxbmNJUZOvVNRItojDXHMS" Name="Create" />
@@ -105,6 +112,9 @@
         <Link Id="UL2EtFFOcmhNb5ETObOQeO" Ids="J6RvybZJGRvMBBawclfDDE,LxuZFS27unUMu0ulS99sZ4" />
         <Link Id="SVlGuseuUzzNWXMEWV7Kni" Ids="J6RvybZJGRvMBBawclfDDE,UL8Aq5kkemgOVY0uSSMqJy" />
         <Link Id="DoUz44J12Y3MlAClM79WLl" Ids="J6RvybZJGRvMBBawclfDDE,Pr585gPSAPEOUZhkbtp3Kw" />
+        <Link Id="DRCvA9b1xXEPfTXd06mh2s" Ids="MHHVKHe4yqVLonP0XV6dHG,RDBSr31iDdZMv3TpTDl69m" />
+        <Link Id="KGwiQ0UKJkDLH40NXJr5J1" Ids="MHHVKHe4yqVLonP0XV6dHG,ELIrFvFW1cwP92jfD6zdVd" />
+        <Link Id="LewQMOidA48LtB2VsKl7ML" Ids="MHHVKHe4yqVLonP0XV6dHG,BG5c3Km7bskMUBSWhXx4RF" />
       </Patch>
     </Node>
   </Patch>
