@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VL.IO.mDNS</id>
+    <version>0.1.0-alpha</version>
+    <title>VL.IO.mDNS</title>
+    <authors>Matthias Husinsky, net-mdns authors</authors>
+    <owners></owners>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/mhusinsky/VL.IO.mDNS</projectUrl>
+    <repository type="git" url="https://github.com/mhusinsky/VL.IO.mDNS.git" />
+    <summary>mDNS nodes for VVVV</summary>
+    <description>Nodes to announce and browse for mDNS services (a.k.a Bonjour or zeroconf) on the network. Based on the net-mdns library.</description>
+    <copyright>Copyright © 2024</copyright>
+    <tags>VL, vvvv, gamma, mDNS, Bonjour, zeroconf, multicast</tags>
+    <icon>resources\icon.png</icon>
+  </metadata>
+  <files>
+    <file src="..\*.vl"/>
+    <file src="..\help\**\*.vl" target="help"/>
+    <file src="..\Readme.md" />
+    <file src="..\LICENSE" />
+  </files>
+</package>
