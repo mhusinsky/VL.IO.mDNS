@@ -24,8 +24,7 @@ jobs:
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.43
       with:
-        csproj: src\VL.Addons.sln
-        nuspec: deployment\VL.Addons.nuspec
+        nuspec: deployment\VL.IO.mDNS.nuspec
 #        icon-src: https://raw.githubusercontent.com/mhusinsky/VL.IO.mDNS/master/resources/icon.png
 #        icon-dst: ./deployment/icon.png
         nuget-key: ${{ secrets.NUGET_KEY }}
