@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>VL.IO.mDNS</id>
-    <version>0.1.1-alpha</version>
+    <version>0.2.0-alpha</version>
     <title>VL.IO.mDNS</title>
     <authors>Matthias Husinsky, net-mdns authors</authors>
     <owners></owners>
@@ -17,7 +17,7 @@
     <tags>VL, vvvv, gamma, mDNS, Bonjour, zeroconf, multicast</tags>
     <icon>resources\icon.png</icon>
     <dependencies>
-      <dependency id="Makaretu.Dns.Multicast.New" version="0.37.0" />
+      <dependency id="Makaretu.Dns.Multicast.New" version="0.38.0" />
     </dependencies>
   </metadata>
   <files>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="E95JwnySOcXN7Vjja7Eh2E" LanguageVersion="2024.6.6" Version="0.128">
-  <NugetDependency Id="U5sKUqbpdCwMg4ADqBp8gT" Location="VL.CoreLib" Version="2024.6.6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="E95JwnySOcXN7Vjja7Eh2E" LanguageVersion="2024.6.7" Version="0.128">
+  <NugetDependency Id="U5sKUqbpdCwMg4ADqBp8gT" Location="VL.CoreLib" Version="2024.6.7" />
   <Patch Id="BithELjL5m5OiKz9GnfE0f">
     <Canvas Id="FxQsbTgSgYlNhOdv7Tjvlr" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -119,23 +119,7 @@
           <Overlay Id="PEHsNh82jW8NAdsQHctNk5" Name="Announce our application via mDNS" Bounds="56,47,628,405">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
-          <Node Bounds="79,367,129,19" Id="QmOczfwNQvrNzFY62sq5RV">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.IO.net-mdns.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="mDNSInstance" />
-            </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-            <Pin Id="TJfOYRl86x5OC43jUg9Zvn" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="DSJuGFisfJCQO0vUWogIvd" Name="Instance Name" Kind="InputPin" />
-            <Pin Id="GKb9jANC6eWPE7ZlBZAY9s" Name="Service Name" Kind="InputPin" DefaultValue="_espace._tcp" />
-            <Pin Id="DlHgZImTMAWO7a5Bp0qupi" Name="Port" Kind="InputPin" />
-            <Pin Id="IkTMQYSlgX2NCFHAmMX9Jc" Name="Announce Period" Kind="InputPin" />
-            <Pin Id="R2r8MN1g90PNDQPkRm0B20" Name="Auto Announce" Kind="InputPin" />
-            <Pin Id="TD1W1FQMzyjNg57SuXMToP" Name="Success" Kind="OutputPin" />
-            <Pin Id="LmkIJPCNpnWLtXaLSR0eBO" Name="Host Name" Kind="InputPin" IsHidden="true" />
-            <Pin Id="E4VElxzX980L3sxUsF7ReB" Name="Log Debug Info" Kind="InputPin" IsHidden="true" />
-          </Node>
-          <Pad Id="RJwuln05clOOmfJNQmYjva" Comment="Auto Announce" Bounds="205,333,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="RJwuln05clOOmfJNQmYjva" Comment="Auto Announce" Bounds="207,333,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -148,22 +132,22 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Uj6TGkJQkVOMCWavTvHpis" Comment="Announce Period" Bounds="174,300,35,15" ShowValueBox="true" isIOBox="true" Value="20">
+          <Pad Id="Uj6TGkJQkVOMCWavTvHpis" Comment="Announce Period" Bounds="182,300,35,15" ShowValueBox="true" isIOBox="true" Value="10">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Q3TflBsL9NqOZ1XQemCul1" Comment="Service Name" Bounds="112,177,72,15" ShowValueBox="true" isIOBox="true" Value="_http._tcp">
+          <Pad Id="Q3TflBsL9NqOZ1XQemCul1" Comment="Service Name" Bounds="105,177,72,15" ShowValueBox="true" isIOBox="true" Value="_http._tcp">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="GjywYnM4jjeLBppwfR2ylx" Comment="Port" Bounds="143,236,35,15" ShowValueBox="true" isIOBox="true" Value="1234">
+          <Pad Id="GjywYnM4jjeLBppwfR2ylx" Comment="Port" Bounds="131,236,35,15" ShowValueBox="true" isIOBox="true" Value="1234">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer16 (Unsigned)" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="F9wA9IiIuSPM9t3kRvsqRt" Comment="Success" Bounds="81,415,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="F9wA9IiIuSPM9t3kRvsqRt" Comment="Success" Bounds="80,415,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="INTPZZtEl3YPDXzCZPNrE2" Bounds="76,92,202,19" ShowValueBox="true" isIOBox="true" Value="our application instance name">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -173,7 +157,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HbILS0oQnI1MpreGwlJiE5" Bounds="106,155,216,19" ShowValueBox="true" isIOBox="true" Value="the type of service we are offering">
+          <Pad Id="HbILS0oQnI1MpreGwlJiE5" Bounds="99,155,216,19" ShowValueBox="true" isIOBox="true" Value="the type of service we are offering">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -182,7 +166,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QjRMTLXKau4OZ8V2GhmGoN" Bounds="137,215,244,19" ShowValueBox="true" isIOBox="true" Value="the port the application is running on">
+          <Pad Id="QjRMTLXKau4OZ8V2GhmGoN" Bounds="125,215,244,19" ShowValueBox="true" isIOBox="true" Value="the port the application is running on">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -191,7 +175,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="GLRgOWl6a0PM9wiHbtvxcs" Bounds="171,258,206,37" ShowValueBox="true" isIOBox="true" Value="how often we broadcast our service on the network">
+          <Pad Id="GLRgOWl6a0PM9wiHbtvxcs" Bounds="172,258,206,37" ShowValueBox="true" isIOBox="true" Value="how often we broadcast our service on the network">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -232,7 +216,7 @@
               <p:maxvisibleentries p:Type="Int32">8</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="I2PxpujPxskLyRMq4jhRhb" Comment="TTL" Bounds="1640,1065,82,152" ShowValueBox="true" isIOBox="true">
+          <Pad Id="I2PxpujPxskLyRMq4jhRhb" Comment="TTL" Bounds="1640,1065,129,154" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">8</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -257,7 +241,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NGdYA0Pij3RNR9Tot7mGRJ" Comment="Port" Bounds="1533,1064,58,152" ShowValueBox="true" isIOBox="true">
+          <Pad Id="NGdYA0Pij3RNR9Tot7mGRJ" Comment="Port" Bounds="1533,1064,65,152" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">8</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -308,7 +292,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="GpAEWYevCmcOEuL7UVNYZZ" Comment="Grace Period" Bounds="1014,332,35,15" ShowValueBox="true" isIOBox="true" Value="-120">
+          <Pad Id="GpAEWYevCmcOEuL7UVNYZZ" Comment="Grace Period" Bounds="1014,332,35,15" ShowValueBox="true" isIOBox="true" Value="-10">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -368,6 +352,21 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="78,375,132,19" Id="J12eEylsNq3OlrPvyBrHGo">
+            <p:NodeReference LastCategoryFullName="IO.mDNS" LastDependency="VL.IO.MDNS.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="mDNSInstance" />
+            </p:NodeReference>
+            <Pin Id="K1aJWXSj76iQU8z9YL14Xg" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Mqkk6c6Y1CfOS8MKBQ7WL6" Name="Instance Name" Kind="InputPin" />
+            <Pin Id="Tq4BybqX2glPow6O0ddwIx" Name="Service Name" Kind="InputPin" />
+            <Pin Id="IzPw8ehIqndLPhmL2zqKMS" Name="Port" Kind="InputPin" />
+            <Pin Id="C9HNfRtHZl8QWt6j8cDDOJ" Name="Host Name" Kind="InputPin" />
+            <Pin Id="LvQ7t33X7DOLLT4dBH08St" Name="Announce Period" Kind="InputPin" />
+            <Pin Id="AalKQPLGsD6QDrKtkRkQS8" Name="Auto Announce" Kind="InputPin" />
+            <Pin Id="FW8gwmDn5RRLZ6KUHzpnfV" Name="Success" Kind="OutputPin" />
+            <Pin Id="T8Ll24yuON6OxyBUiPP0Yb" Name="Log Debug Info" Kind="InputPin" IsHidden="true" />
+          </Node>
         </Canvas>
         <Patch Id="Mba4PUQ9dCDOkoOhp4w3XC" Name="Create" />
         <Patch Id="NhXYet3XwYiPTLN5m7oeEP" Name="Update" />
@@ -382,12 +381,6 @@
         <Link Id="M97YaFLaAGYN5WJ7HiMxzY" Ids="D7WRE8LY5m6LfI7DUFtJ4p,DzyyGIkp7kwM5UwbZIupAt" />
         <Link Id="SHM4aIpizi4MQjGfFlAPq3" Ids="MoT7K8ISgV8PrYqmRFRr3q,BDHX5VSzDfVME8ENUt3YTg" />
         <Link Id="BgxiYJCEac8Lmxqh1x5W4A" Ids="A3u8snJonNPP8ggtEh45Cz,QTRl0sVhzVaOAe10qQafax" />
-        <Link Id="AS8HEOxC0sUPOzBlBtezzT" Ids="RJwuln05clOOmfJNQmYjva,R2r8MN1g90PNDQPkRm0B20" />
-        <Link Id="PvxO77f7uVEMUTxWwjA373" Ids="Veuj2KzddcLLW9G37HbqSm,DSJuGFisfJCQO0vUWogIvd" />
-        <Link Id="QP8h0tmAFclLbVyN7QCW0L" Ids="Uj6TGkJQkVOMCWavTvHpis,IkTMQYSlgX2NCFHAmMX9Jc" />
-        <Link Id="OJFNqdiRXk4OSCs5t7H3CK" Ids="Q3TflBsL9NqOZ1XQemCul1,GKb9jANC6eWPE7ZlBZAY9s" />
-        <Link Id="DPwNX2omaUwQUha41WQ8fX" Ids="GjywYnM4jjeLBppwfR2ylx,DlHgZImTMAWO7a5Bp0qupi" />
-        <Link Id="UB5RKoM0PQELSK5ois5iMP" Ids="TD1W1FQMzyjNg57SuXMToP,F9wA9IiIuSPM9t3kRvsqRt" />
         <Link Id="DP4MQapu73vOKmMlHbBktJ" Ids="A75lRvj1zVBNmAnmQIob6l,VZci4P8ylFnNEPeszINgOs" />
         <Link Id="A42zWFul37CPkwLDRhuDTI" Ids="HpVyEiyZuzcLgvW4tNxMoA,N4dieGCB2XIMpZ0ihmWesW" />
         <Link Id="IjRJYzEpUYXOoA24QB0Sxn" Ids="PwOOjvvqTWhPRvVKhTXALU,CYMqt0K0bEgMOj5NeQ7jDq" />
@@ -408,6 +401,12 @@
         <Link Id="VnzpEteI4DrOxNHzWXQQTL" Ids="V0Uccm511y0NlAJAjv4siP,CSSkU5uUNYmQWpERrE1Y5m" />
         <Link Id="TkS2nvKeTvFP4tfJnSQvsY" Ids="DsAGM6aX8n3Lp2LaDAnWLJ,GiyAkqzPKn6QXEscqsXf7E" />
         <Link Id="DTMdKeGXPRMOUgDYWk446r" Ids="RgscTup0wS1MgDjsHXj6bs,N4YrvCvqhIsOB0UGEtyPgS" />
+        <Link Id="RbXcb7MGLhsO7yj4ZE5TkZ" Ids="RJwuln05clOOmfJNQmYjva,AalKQPLGsD6QDrKtkRkQS8" />
+        <Link Id="BwkxzqfjysAPbuI1y63xws" Ids="Uj6TGkJQkVOMCWavTvHpis,LvQ7t33X7DOLLT4dBH08St" />
+        <Link Id="NGg3E6LxdrFLoTMRvOauk2" Ids="GjywYnM4jjeLBppwfR2ylx,IzPw8ehIqndLPhmL2zqKMS" />
+        <Link Id="RMe2GacmQqPP6RidQHjHA3" Ids="Q3TflBsL9NqOZ1XQemCul1,Tq4BybqX2glPow6O0ddwIx" />
+        <Link Id="DZJAtjbQXYNN5aMN8Yd3BO" Ids="Veuj2KzddcLLW9G37HbqSm,Mqkk6c6Y1CfOS8MKBQ7WL6" />
+        <Link Id="Sl44SSgB1qSPQbLmNiZyhE" Ids="FW8gwmDn5RRLZ6KUHzpnfV,F9wA9IiIuSPM9t3kRvsqRt" />
       </Patch>
     </Node>
   </Patch>
